@@ -51,6 +51,8 @@ pub enum EventType {
     ChargeDisputeUpdated,
     #[serde(rename = "charge.refund.updated")]
     ChargeRefundUpdated,
+    #[serde(rename = "checkout_beta.session_succeeded")]
+    CheckoutBetaSessionSucceded,
     #[serde(rename = "coupon.created")]
     CouponCreated,
     #[serde(rename = "coupon.deleted")]
@@ -195,6 +197,7 @@ pub enum EventObject {
     Balance(Balance),
     BankAccount(BankAccount),
     Charge(Charge),
+    CheckoutBeta(CheckoutBeta),
     Dispute(Dispute),
     File(File),
     Invoice(Invoice),
