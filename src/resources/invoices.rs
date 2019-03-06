@@ -146,7 +146,7 @@ pub struct Invoice {
     pub description: Option<String>,
     pub discount: Option<Discount>,
     pub ending_balance: Option<i64>,
-    pub forgiven: bool,
+    pub forgiven: Option<bool>,
     pub lines: List<InvoiceLineItem>,
     pub livemode: bool,
     pub metadata: Metadata,
