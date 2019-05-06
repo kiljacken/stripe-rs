@@ -140,6 +140,7 @@ fn send<T: DeserializeOwned>(request: RequestBuilder) -> Response<T> {
     let mut response = request.send()?;
     let mut body = String::with_capacity(4096);
     response.read_to_string(&mut body)?;
+    log::trace!("stripe response: {}", body);
 
     let status = response.status();
     if !status.is_success() {
