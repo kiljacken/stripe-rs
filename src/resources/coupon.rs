@@ -17,7 +17,7 @@ pub struct Coupon {
     pub livemode: bool,
     pub max_redemptions: Option<u64>,
     pub metadata: Metadata,
-    pub percent_off: u64, // eg. 50 => 50%
+    pub percent_off: f64, // eg. 50 => 50%
     pub redeem_by: Timestamp,
     pub redeemed: u64,
     pub valid: bool,
