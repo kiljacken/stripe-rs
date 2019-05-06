@@ -19,7 +19,7 @@ pub struct Coupon {
     pub metadata: Metadata,
     pub percent_off: f64, // eg. 50 => 50%
     pub redeem_by: Option<Timestamp>,
-    pub redeemed: u64,
+    pub redeemed: Option<u64>,
     pub valid: bool,
     pub deleted: bool,
 }
