@@ -21,7 +21,7 @@ pub struct Coupon {
     pub redeem_by: Option<Timestamp>,
     pub redeemed: Option<u64>,
     pub valid: bool,
-    pub deleted: bool,
+    pub deleted: Option<bool>,
 }
 
 impl Identifiable for Coupon {
